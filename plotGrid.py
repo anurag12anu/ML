@@ -16,15 +16,14 @@ font2 = {
     'size': 8
 }
 
-# Plot y1 and y2 separately as two different lines
-plt.plot(y1, label='Line 1 (y1)')  # Plot y1
-plt.plot(y2, label='Line 2 (y2)')  # Plot y2
-
 plt.xlabel("Average pulse", fontdict=font2)
 plt.ylabel("Calorie burnage", fontdict=font2)
 plt.title("Sport Watch Data", fontdict=font1)
 
-plt.legend()  # Add a legend to differentiate between the two lines
-plt.grid()    # Add grid for better readability
+plt.plot(y1, label="Y1 values")  # Plot y1
+plt.plot(y2, label="Y2 values")  # Plot y2
+
+plt.grid()  # Show grid
+plt.legend()  # Show legend for the plots
 
 plt.show()  # Display the plot
